@@ -23,7 +23,7 @@ public class Task implements Serializable {
 	private Date date_created;
 	private boolean finished;
 	
-	public Task() {};
+	public Task() {}
 	
 	public Task(String name, String description, Date date_created, boolean finished) {
 		super();
