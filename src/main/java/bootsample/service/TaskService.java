@@ -2,6 +2,7 @@ package bootsample.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -28,6 +29,22 @@ public class TaskService {
 		}
 		return tasks;
 	}
+	
+	public Task findTask(int id) {
+		List<Task> tasks = new ArrayList<>();
+		Task task = null; 
+		for(bootsample.model.Task task1 : taskRepository.findAll()) {
+			if(task1.getId() == id) {
+				task = task1;
+			}
+		}
+		return task;
+	}
+	
+	
+//	public Optional<Task> findTask(int id) {
+//		return taskRepository.findById(id);
+//	}
 	
 	public void save(Task task) {
 		taskRepository.save(task);

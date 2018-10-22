@@ -29,7 +29,7 @@
 	<dependency>
 	    <groupId>org.apache.tomcat.embed</groupId>
 	    <artifactId>tomcat-embed-jasper</artifactId>
-	    <scope>providerd</scope>
+	    <scope>providerd</scope> 
 	</dependency>
 	<dependency>
 		 <groupId>org.springframework.boot</groupId>
